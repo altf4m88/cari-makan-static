@@ -74,7 +74,7 @@ body {
     color: #ebebf2;
 }
 
-.burger-menu{
+.hamburger{
     display: none;
 }
 
@@ -87,6 +87,7 @@ body {
     width: 100%;
     text-align: center;
     background:-webkit-linear-gradient(rgba(29, 38, 113, 0.6), rgba(0, 0, 0, 0.4)), url("../public/images/heros/hero-image_2.jpg");
+    background:linear-gradient(rgba(29, 38, 113, 0.6), rgba(0, 0, 0, 0.4)), url("../public/images/heros/hero-image_2.jpg");
     background-position: center;
     ;
 }
@@ -111,8 +112,68 @@ body {
 
 
 
-@media screen and (min-width: 500px) {
-    .header__menu {
-        display: none;
+@media screen and (max-width: 632px) {
+
+    .nav{
+        justify-content: space-between;
+    }
+
+    .on-click {
+        -webkit-transform: translate(0px, 50px) !important;
+        transform: translate(0px, 50px) !important;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+        background-color: #7371FC;
+        width: 100%;
+        position: absolute;
+
+        -webkit-transform: translate(-800px, 50px);
+        transform: translate(-800px, 50px);
+        transition: transform 0.8s ease;
+    }
+
+    .nav-item {
+        box-sizing: border-box;
+        display: inline-block;
+        text-align: center;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    .nav-title{
+        margin-left: 5%;
+    }
+
+    .line{
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .hamburger{
+        display: inline;
+        background-color: #7371FC;
+        justify-self: flex-end;
+        cursor: pointer;
+        z-index: 10;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .hero-title{
+        font-size: 24px;
+    }
+
+    .hero-tagline {
+        margin: 16px 10px 0 10px;
+        font-size: 16px;
+        font-weight: 500;
     }
 }
