@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -12,9 +14,8 @@ body, html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 12px;
-    color: #424242;
 }
 
 /*
@@ -22,10 +23,11 @@ body {
  */
 
 .nav {
+    color: white !important;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e6d5b8;
+    background-color: #7371FC;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -33,7 +35,10 @@ body {
 }
 
 .nav-list {
-    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.2em;
     width: 50%;
     padding: 0;
     margin: 0;
@@ -42,35 +47,38 @@ body {
 .nav-item {
     box-sizing: border-box;
     display: inline-block;
-    width: 30%;
     text-align: center;
     line-height: 24px;
     text-transform: uppercase;
 }
 
 .nav-title {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 2.5em;
     margin: 0.25em;
     display: inline-block;
-    color: #212121;
 }
 
 .nav a {
     display: inline-block;
-    padding: 1.3em;
+    padding: 1em 1.5em;
     text-decoration: none;
-    color: #616161;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    transition-duration: 300ms;
 }
 
 .nav a:hover {
-    text-decoration: underline;
-    color: #000;
+    transform: translateY(-5%);
+    color: #ebebf2;
 }
 
 .burger-menu{
     display: none;
 }
+
+
 
 .hero {
     display: flex;
@@ -78,27 +86,27 @@ body {
     min-height: 380px;
     width: 100%;
     text-align: center;
-    background-image: url("../public/images/heros/hero-image_4.jpg");
+    background:-webkit-linear-gradient(rgba(29, 38, 113, 0.6), rgba(0, 0, 0, 0.4)), url("../public/images/heros/hero-image_2.jpg");
     background-position: center;
-    background-color: green;
+    ;
 }
 
-.hero__inner {
+.hero-inner {
     margin: 0 auto;
     max-width: 800px;
 }
 
-.hero__title {
+.hero-title {
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 36px;
 }
 
-.hero__tagline {
+.hero-tagline {
     color: #fff;
     margin-top: 16px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 
