@@ -31,13 +31,15 @@ restaurants.forEach(data => {
         <article tabindex="0" class="card" id=${data.id}>
             <img class="card-image" src=${data.pictureId} alt="Foto ${data.name}">
             <div class="card-content">
-                <h2 class="card-title">${data.name}, ${data.city}</h2>
+                <div class="card-header">
+                    <h2 class="card-title">${data.name}, ${data.city}</h2>
+                    <div class="card-rating">
+                        <p><i class="fas fa-star"></i> ${data.rating}</p>
+                    </div>
+                </div>
                 <p class="card-description">
                     ${data.description}
                 </p>
-                <div class="card-rating">
-                    <p><i class="fas fa-star"></i> ${data.rating}</p>
-                </div>
             </div>
         </article>
     `;
