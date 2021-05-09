@@ -286,10 +286,10 @@ footer{
     }
 
     .line{
-        width: 30px;
-        height: 4px;
+        width: 36px;
+        height: 5px;
         background-color: white;
-        margin: 5px;
+        margin: 8px;
     }
 
     .hamburger{
@@ -299,6 +299,7 @@ footer{
         cursor: pointer;
         z-index: 10;
         margin-right: 5%;
+        border: 0;
     }
 }
 
