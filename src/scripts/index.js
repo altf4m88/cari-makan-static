@@ -46,5 +46,3 @@ restaurants.forEach(data => {
 });
 
 cardParent.innerHTML = cards;
-
-console.log(html);
