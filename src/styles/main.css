@@ -167,7 +167,7 @@ main{
 
 .card-content{
     height: 100%;
-    padding: 16px 20px 20px 32px;
+    padding: 16px 20px 32px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,6 +189,12 @@ main{
 .card-description{
     font-size: 14px;
     text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 8.6em;
+    line-height: 1.8em;
 }
 
 .card-rating{
